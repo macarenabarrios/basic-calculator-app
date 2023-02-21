@@ -5,10 +5,11 @@ import GlobalStyle3 from "./styles/theme3";
 import {
   Container,
   Header,
-  WrapperSwitch,
+  Input,
   Switch,
   SwitcherContainer,
-  Switcher
+  Switcher,
+  WrapperSwitch,
 } from './App.style'
 
 function App() {
@@ -38,6 +39,8 @@ function App() {
 
           </WrapperSwitch>
         </Header>
+        <Input>
+        </Input>
       </Container>
 
     </>
