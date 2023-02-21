@@ -1,5 +1,12 @@
 import styled, { createGlobalStyle } from "styled-components";
 
+type Props = {
+    color ? : String;
+    bg ? : String;
+    bdbox ? : String;
+    gc ? : String;
+}
+
 type Theme = {
     theme: String;
 }
@@ -35,7 +42,7 @@ export const Switch = styled.div`
     flex: 0.75;
     justify-content: center;
     align-items: center;
-    div:first-of-type {
+    > div:first-of-type {
         width: 80%;
         font-size: 0.65rem;
         font-weight: 100;
@@ -59,4 +66,8 @@ export const Switcher = styled.div<Theme>`
     min-height: 11px;
     background-color: var(--key-shadow-dark-red);
     border-radius: 2rem;
+    position: absolute;
+    left: ${(Props) => Props.theme};
+    top: 17%;
+    transition: all 0.1s linear;
 `
